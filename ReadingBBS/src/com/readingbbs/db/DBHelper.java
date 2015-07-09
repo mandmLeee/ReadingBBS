@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
- * 数据库帮助类，获得Connection对象
+ * 鏁版嵁搴撳府鍔╃被锛岃幏寰桟onnection瀵硅薄
  * 
  * @author LG
  */
@@ -15,18 +15,18 @@ public class DBHelper {
 	private static String mDriverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 	private static String mUrl = "jdbc:sqlserver://localhost:1433;DatabaseName=ReadingBBS";
 	private static String mUserId = "sa";
-	private static String mPassWord = "ligangde10";
+	private static String mPassWord = "123";
 
 	public static Connection getSqlConnection() {
 
 		if (mConnection != null) {
 			return mConnection;
 		}
-		// 连接到数据库
+		// 杩炴帴鍒版暟鎹簱
 		try {
 			Class.forName(mDriverName);
 			mConnection = DriverManager.getConnection(mUrl, mUserId, mPassWord);
-			System.out.println("Connection Successful!"); // 连接成功
+			System.out.println("Connection Successful!"); // 杩炴帴鎴愬姛
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (ClassNotFoundException ex) {
