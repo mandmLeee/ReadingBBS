@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name></display-name>
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.readingbbs.controller.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/servlet/RegisterServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.readingbbs.controller.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/servlet/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.readingbbs.controller.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/servlet/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>com.readingbbs.controller.IndexServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/servlet/IndexServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PostServlet</servlet-name>
+		<servlet-class>com.readingbbs.controller.PostServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostServlet</servlet-name>
+		<url-pattern>/servlet/PostServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PostItServlet</servlet-name>
+		<servlet-class>com.readingbbs.controller.PostItServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostItServlet</servlet-name>
+		<url-pattern>/servlet/PostItServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CommentServlet</servlet-name>
+		<servlet-class>com.readingbbs.controller.CommentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CommentServlet</servlet-name>
+		<url-pattern>/servlet/CommentServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ResetPwdServlet</servlet-name>
+		<servlet-class>com.readingbbs.controller.ResetPwdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResetPwdServlet</servlet-name>
+		<url-pattern>/servlet/ResetPwdServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>com.readingbbs.controller.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/servlet/AdminServlet</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>/index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
